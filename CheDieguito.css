@@ -1,0 +1,221 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #005f73;
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+    margin: 0 0 1em;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: #005f73;
+}
+
+a:hover {
+    color: #94d2bd;
+}
+
+/* Navegación */
+header {
+    background: #428fbc;
+    color: white;
+    padding: 10px 20px;s
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #94d2bd;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.hero .btn-primary {
+    background: #94d2bd;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero .btn-primary:hover {
+    background: #e9d8a6;
+}
+
+/* Sección General */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Menú */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.menu-item {
+    background: #e9d8a6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu-item h3 {
+    margin-top: 15px;
+}
+
+/* Galería */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contacto */
+.contact-info {
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #005f73;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #94d2bd;
+}
+
+/* Reservaciones */
+.reservations .btn-primary {
+    background: #005f73;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.reservations .btn-primary:hover {
+    background: #94d2bd;
+}
+
+/* Footer */
+footer {
+    background: #428fbc;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links img {
+    width: 25px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+footer .social-links img:hover {
+    filter: brightness(1.2);
+}
