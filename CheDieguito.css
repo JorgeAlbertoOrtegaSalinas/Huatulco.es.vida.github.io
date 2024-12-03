@@ -138,7 +138,6 @@ section img {
     margin-top: 15px;
 }
 
-/* Galería */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -151,7 +150,6 @@ section img {
     border-radius: 5px;
 }
 
-/* Contacto */
 .contact-info {
     margin-bottom: 20px;
 }
@@ -183,7 +181,6 @@ form button:hover {
     background: #94d2bd;
 }
 
-/* Reservaciones */
 .reservations .btn-primary {
     background: #005f73;
     color: white;
@@ -197,7 +194,6 @@ form button:hover {
     background: #94d2bd;
 }
 
-/* Footer */
 footer {
     background: #428fbc;
     color: white;
