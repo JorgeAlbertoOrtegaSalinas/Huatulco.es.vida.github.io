@@ -13,10 +13,27 @@
 }
 
 .menu-item img {
+    
     width: 100%;
     border-radius: 10px;
 }
 
 .menu-item h3 {
     margin-top: 15px;
+}
+.navbar-brand {
+    font-weight: bold; /* Negrita */
+    font-style: italic; /* Cursiva */
+    font-size: 24px; /* Tamaño de fuente */
+    font-family: 'Serif', Georgia, Times, 'Times New Roman'; /* Tipografía tipo serif */
+}
+.navbar-nav .nav-link, 
+.btn {
+    font-weight: bold; /* Aplica negrita */
+}
+.card-img-top {
+    width: 100%; /* Ajusta el ancho de la imagen al contenedor */
+    height: auto; /* Mantén la proporción */
+    max-width: 250px; /* Define un tamaño máximo para que sean más pequeñas */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
