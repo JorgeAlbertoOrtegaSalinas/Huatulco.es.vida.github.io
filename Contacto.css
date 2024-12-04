@@ -1,109 +1,130 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  header {
-    background-color: #6b8e23;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 2.5rem;
-  }
-  
-  header p {
-    margin: 10px 0 0;
-    font-size: 1.2rem;
-  }
-  
-  main {
-    padding: 20px;
-  }
-  
-  .contact-info, .contact-form, .social-media {
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .contact-info h2, .contact-form h2, .social-media h2 {
-    color: #6b8e23;
-    margin-bottom: 15px;
-  }
-  
-  .contact-info p, .social-media p {
-    margin: 5px 0;
-  }
-  
-  .contact-info a, .social-media a {
-    color: #6b8e23;
-    text-decoration: none;
-  }
-  
-  .contact-info a:hover, .social-media a:hover {
-    text-decoration: underline;
-  }
-  
-  .contact-form label {
-    display: block;
-    margin: 10px 0 5px;
-    font-weight: bold;
-  }
-  
-  .contact-form input, .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .contact-form button {
-    background-color: #6b8e23;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
-  .contact-form button:hover {
-    background-color: #556b2f;
-  }
-  
-  .social-media ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .social-media ul li {
-    background-color: #6b8e23;
-    border-radius: 5px;
-    padding: 10px;
-  }
-  
-  .social-media ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  footer {
-    text-align: center;
-    background-color: #6b8e23;
-    color: white;
-    padding: 15px;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header {
+  position: relative;
+  background-color: #6b8e23;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+}
+
+.header .btn-home {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  padding: 8px 15px;
+  background-color: #556b2f; 
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.header .btn-home:hover {
+  background-color: #3e4c21; 
+  transform: scale(1.05);
+}
+
+main {
+  padding: 20px;
+}
+
+.contact-info, .contact-form, .social-media {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2, .contact-form h2, .social-media h2 {
+  color: #6b8e23;
+  margin-bottom: 15px;
+}
+
+.contact-info p, .social-media p {
+  margin: 5px 0;
+}
+
+.contact-info a, .social-media a {
+  color: #6b8e23;
+  text-decoration: none;
+}
+
+.contact-info a:hover, .social-media a:hover {
+  text-decoration: underline;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #6b8e23;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #556b2f;
+  transform: scale(1.05);
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.social-media ul li {
+  background-color: #6b8e23;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.social-media ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background-color: #6b8e23;
+  color: white;
+  padding: 15px;
+}
