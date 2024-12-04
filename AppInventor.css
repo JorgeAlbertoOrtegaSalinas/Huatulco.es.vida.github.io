@@ -1,0 +1,103 @@
+/* styles.css */
+
+/* Configuración general */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección del QR */
+.qr-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.qr-image {
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.qr-description {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Sección de información */
+.info-section {
+    margin-bottom: 30px;
+}
+
+.info-section h2 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+.info-section p {
+    text-align: justify;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* Sección de características */
+.features-section {
+    margin-bottom: 30px;
+}
+
+.features-section h2 {
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.features-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.features-section li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 30px;
+    border-radius: 0 0 8px 8px;
+}
+
+.footer p {
+    margin: 0;
+}
