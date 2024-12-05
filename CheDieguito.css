@@ -26,7 +26,7 @@ a:hover {
 }
 
 header {
-    background: #428fbc;
+    background: #1a262d;
     color: white;
     padding: 10px 20px;s
     position: sticky;
@@ -189,7 +189,7 @@ form button:hover {
 }
 
 footer {
-    background: #428fbc;
+    background: #1b2328;
     color: white;
     text-align: center;
     padding: 10px 20px;
@@ -223,3 +223,31 @@ footer .social-links img:hover {
     top: 0;
     left: 0;
   }
+  .carousel-inner img {
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+}
+.gallery {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px;
+    transition: transform 0.3s ease; 
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
