@@ -80,4 +80,24 @@
   .accordion-button:focus {
     box-shadow: none;
   }
-  
+  footer {
+    background: #121e25;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 50px;
+}
+
+footer .social-links {
+    margin-top: 10px;
+}
+
+footer .social-links img {
+    width: 25px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+footer .social-links img:hover {
+    filter: brightness(1.2);
+} 
