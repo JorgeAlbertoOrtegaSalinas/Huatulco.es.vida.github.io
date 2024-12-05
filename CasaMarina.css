@@ -1,12 +1,16 @@
-
-
+/* Reset básico y estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
     color: #333;
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3 {
@@ -16,22 +20,24 @@ h1, h2, h3 {
 
 p {
     text-align: justify;
-    margin: 0 0 1em;
+    margin-bottom: 1em;
 }
 
 a {
     text-decoration: none;
     color: #005f73;
+    transition: color 0.3s;
 }
 
 a:hover {
     color: #94d2bd;
 }
 
+/* Header y navegación */
 header {
     background: #111c25;
     color: white;
-    padding: 10px 20px;s
+    padding: 10px 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -41,7 +47,6 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin: 0;
     padding: 0;
 }
 
@@ -52,23 +57,29 @@ header {
 .nav-links a {
     color: white;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
 .nav-links a:hover {
     color: #94d2bd;
 }
 
+/* Hero section */
 .hero {
     position: relative;
+    height: 100vh;
     text-align: center;
     color: white;
+    overflow: hidden;
 }
 
 .hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     filter: brightness(70%);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .hero-text {
@@ -76,6 +87,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .hero h1 {
@@ -85,6 +97,7 @@ header {
 
 .hero p {
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 .hero .btn-primary {
@@ -93,25 +106,21 @@ header {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
+    font-size: 1rem;
 }
 
 .hero .btn-primary:hover {
     background: #e9d8a6;
 }
 
+/* Secciones generales */
 section {
     padding: 50px 20px;
     text-align: center;
 }
 
-section img {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-}
-
+/* Menú */
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -135,6 +144,7 @@ section img {
     margin-top: 15px;
 }
 
+/* Galería */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -147,6 +157,7 @@ section img {
     border-radius: 5px;
 }
 
+/* Contacto */
 .contact-info {
     margin-bottom: 20px;
 }
@@ -178,19 +189,7 @@ form button:hover {
     background: #94d2bd;
 }
 
-.reservations .btn-primary {
-    background: #005f73;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-}
-
-.reservations .btn-primary:hover {
-    background: #94d2bd;
-}
-
+/* Footer */
 footer {
     background: #121e25;
     color: white;
@@ -207,106 +206,38 @@ footer .social-links img {
     width: 25px;
     margin: 0 10px;
     vertical-align: middle;
+    transition: filter 0.3s;
 }
 
 footer .social-links img:hover {
     filter: brightness(1.2);
 }
-.navbar-brand {
-    font-weight: bold; 
-    font-size: 24px; 
-    font-family: 'Serif', Georgia, Times, 'Times New Roman';
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero .btn-primary {
+        padding: 8px 16px;
+    }
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .hero {
-    position: relative;
-    height: 100vh; 
-    overflow: hidden;
-  }
-  
-  .hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    padding: 20px;
-  }
-  
-  .hero-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero-text .btn-primary {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  .hero-text .btn-primary:hover {
-    background-color: #0056b3;
-  }
-  
-  @media (max-width: 768px) {
-    .hero-text h1 {
-      font-size: 2rem;
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
     }
-  
-    .hero-text p {
-      font-size: 1rem;
-    }
-  
-    .hero-text .btn-primary {
-      padding: 8px 16px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .hero-text h1 {
-      font-size: 1.8rem;
-    }
-  
-    .hero-text p {
-      font-size: 0.9rem;
-    }
-  
-    .hero-text .btn-primary {
-      font-size: 0.9rem;
-    }
-  }
 
-  .gallery p {
-    text-align: center;
-    font-size: 1.2rem; 
-    margin-bottom: 1.5rem; 
-    color: #333; 
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .hero .btn-primary {
+        font-size: 0.9rem;
+    }
 }
