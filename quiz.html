@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Huatulco</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" href="Quiz.ico" type="image/x-icon"> 
+
+</head>
+<body>
+    <header>
+        <h1>Quiz: ¿Qué tanto sabes sobre Huatulco?</h1>
+    </header>
+
+    <main>
+        <section id="intro">
+            <h2>Bienvenido al Quiz de Huatulco</h2>
+            <p>
+                Pon a prueba tus conocimientos sobre este maravilloso destino turístico. Responde las preguntas y suma puntos. 
+                Cada pregunta tiene una sola respuesta correcta. ¿Listo para empezar?
+            </p>
+            <button id="start-btn" onclick="startQuiz()">¡Comenzar!</button>
+        </section>
+
+        <div id="quiz-container" style="display: none;">
+            <h2 id="question"></h2>
+            <div id="answers"></div>
+            <button id="next-btn" onclick="nextQuestion()" disabled>Siguiente</button>
+        </div>
+
+        <div id="result" style="display: none;">
+            <h2>¡Terminaste el Quiz!</h2>
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Reiniciar Quiz</button>
+            <button onclick="goToHome()">Volver al Inicio</button>
+        </div>
+    </main>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

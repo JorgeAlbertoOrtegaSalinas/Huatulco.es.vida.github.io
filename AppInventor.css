@@ -1,7 +1,4 @@
-/* styles.css */
 
-/* Configuración general */
-/* Botón de volver al inicio */
 .btn-home {
     display: inline-block;
     margin-top: 10px;
@@ -48,7 +45,6 @@ header h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Sección del video */
 .video-section {
     text-align: center;
     margin-bottom: 30px;
@@ -61,7 +57,7 @@ header h1 {
 
 .video-wrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%;
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -84,7 +80,6 @@ header h1 {
     color: #555;
 }
 
-/* Sección de información */
 .info-section {
     margin-bottom: 30px;
 }
@@ -101,7 +96,6 @@ header h1 {
     font-size: 1rem;
 }
 
-/* Sección de características */
 .features-section {
     margin-bottom: 30px;
 }
@@ -123,7 +117,6 @@ header h1 {
     color: #333;
 }
 
-/* Footer */
 .footer {
     text-align: center;
     padding: 15px;
@@ -137,7 +130,6 @@ header h1 {
     margin: 0;
 }
 
-/* Botón en el header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -164,7 +156,6 @@ header h1 {
     background-color: #2d4373;
 }
 
-/* Mantener el estilo del resto del contenido */
 body {
     margin: 0;
     font-family: 'Georgia', serif;

@@ -1,4 +1,3 @@
-/* General */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,6 @@ body {
     min-height: 100vh;
 }
 
-/* Header */
 header {
     background-color: #007f91;
     color: #fff;
@@ -47,7 +45,6 @@ header button:hover {
     background-color: #e76f51;
 }
 
-/* Main Sections */
 main {
     flex: 1;
     padding: 20px;
@@ -89,7 +86,6 @@ ul li {
     font-size: 1rem;
 }
 
-/* Input & Button */
 input[type="text"] {
     width: 80%;
     padding: 10px;
@@ -114,7 +110,6 @@ button:hover {
     background-color: #f4a261;
 }
 
-/* Footer */
 footer {
     background: #007f91;
     color: white;

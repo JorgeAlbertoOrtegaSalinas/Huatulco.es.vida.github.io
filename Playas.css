@@ -1,15 +1,14 @@
-/* General */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5dc; /* Color arena */
+    background-color: #f5f5dc; 
     color: #4f4f4f;
 }
 
 header {
-    background-color: #87ceeb; /* Azul cielo pastel */
-    color: #2e4a62; /* Azul oscuro */
+    background-color: #87ceeb; 
+    color: #2e4a62; 
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -26,27 +25,27 @@ nav ul {
 
 nav ul li a {
     text-decoration: none;
-    color: #2e4a62; /* Azul oscuro */
+    color: #2e4a62; 
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #4682b4; /* Azul acero */
+    color: #4682b4; 
 }
 
 .hero {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(135deg, #b0e0e6, #f0e68c); /* Azul pálido y arena */
-    color: #2e4a62; /* Azul oscuro */
+    background: linear-gradient(135deg, #b0e0e6, #f0e68c); 
+    color: #2e4a62; 
     border-radius: 0 0 50px 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .hero button {
     padding: 15px 30px;
-    background-color: #f4a460; /* Arena pastel */
+    background-color: #f4a460; 
     border: none;
     color: white;
     cursor: pointer;
@@ -56,7 +55,7 @@ nav ul li a:hover {
 }
 
 .hero button:hover {
-    background-color: #d2b48c; /* Arena más suave */
+    background-color: #d2b48c; 
 }
 
 .grid {
@@ -67,7 +66,7 @@ nav ul li a:hover {
 }
 
 .card {
-    background-color: #add8e6; /* Azul claro pastel */
+    background-color: #add8e6; 
     padding: 20px;
     text-align: center;
     border-radius: 10px;
@@ -93,7 +92,7 @@ nav ul li a:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #4682b4; /* Azul acero */
+    background-color: #4682b4;
     color: white;
     margin-top: 20px;
     font-size: 0.9em;
